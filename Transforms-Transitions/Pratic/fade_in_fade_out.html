@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Senji_Master</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 50vh;
+            background-image: url(paris.jpg);
+            background-size: cover;
+            background-position: 0%;
+        }
+
+        .container:hover .text {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 15vh;
+            height: 100%;
+            text-align: center;
+            color: #ffffff;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .text h1 {
+            font-size: 3em;
+            padding: 20px;
+        }
+
+        .text p {
+            width: 70%;
+            margin: auto;
+        }
+        .cards-container{
+            text-align: center;
+            padding: 20px;
+        }
+        .cards-container h3{
+            margin-bottom: 20px;
+            font-size: 3em;
+        }
+        .cards-container .button{
+            padding: 20px;
+            border: none;
+            background-color: bisque;
+            color: #ffffff;
+            display: block;
+            margin: 20px auto;
+            cursor: pointer;
+        }
+        .cards-container .button:hover ~ .card{
+            opacity: 1;
+            animation: show-card 0.3s;
+        }
+       
+        .card{
+            width: 40%;
+            margin: 10px;
+            display: inline-block;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+            opacity: 0;
+        }
+        .card .card-img{
+            height: 200px;
+        }
+        .card .card-img img{
+            height: 100%;
+            width: 100%;
+        }
+        .card .card-description{
+            padding: 10px;
+        }
+        @-moz-keyframes show-card{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        @-webkit-keyframes show-card{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        @keyframes show-card {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Visit me</h1>
+            <p>Exercitation nisi fugiat in elit irure dolor esse officia id ad. Lorem commodo fugiat anim sit commodo laborum
+                eu irure velit consectetur eiusmod. Duis consectetur duis commodo magna anim duis in ullamco incididunt dolore
+                Lorem eu nulla. Consectetur do cupidatat proident ullamco consectetur nisi consequat consectetur cillum voluptate
+                elit veniam id duis. Nisi officia sunt elit fugiat ad reprehenderit ex ut laboris ex esse ex cillum. Sint
+                enim amet voluptate dolore ea laboris magna non excepteur sint aute pariatur minim minim. Consequat duis
+                ea esse fugiat aute aute proident eiusmod veniam ex ipsum cillum.</p>
+        </div>
+
+    </div>
+    <div class="cards-container">
+        <h3>Cards</h3>
+        <input type="button" value="Hover plz!" class="button">
+        <div class="card">
+            <div class="card-img">
+                <img src="desert.jpg" alt="">
+            </div>
+            <div class="card-description">
+                <p>Cillum ullamco nisi aute adipisicing labore sint qui laboris velit aliquip duis amet sint minim. Incididunt
+                    velit non id id cillum pariatur aliqua nulla adipisicing veniam minim. Incididunt Lorem laboris consectetur
+                    deserunt amet tempor consectetur irure irure ex eu. Adipisicing mollit laborum nostrud aliqua sint minim
+                    consequat proident magna ex aliqua eu reprehenderit sit. Pariatur nostrud labore et enim ut occaecat
+                    eu enim. Nostrud est in excepteur cillum nisi mollit dolore exercitation veniam velit velit deserunt
+                    aliquip adipisicing. Do reprehenderit adipisicing nisi qui ut nisi minim duis proident enim ad. Eiusmod
+                    amet voluptate laboris veniam sunt Lorem cillum ipsum adipisicing.</p>
+            </div>
+        </div>
+        <div class="card">
+                <div class="card-img">
+                    <img src="desert.jpg" alt="">
+                </div>
+                <div class="card-description">
+                    <p>Cillum ullamco nisi aute adipisicing labore sint qui laboris velit aliquip duis amet sint minim. Incididunt
+                        velit non id id cillum pariatur aliqua nulla adipisicing veniam minim. Incididunt Lorem laboris consectetur
+                        deserunt amet tempor consectetur irure irure ex eu. Adipisicing mollit laborum nostrud aliqua sint minim
+                        consequat proident magna ex aliqua eu reprehenderit sit. Pariatur nostrud labore et enim ut occaecat
+                        eu enim. Nostrud est in excepteur cillum nisi mollit dolore exercitation veniam velit velit deserunt
+                        aliquip adipisicing. Do reprehenderit adipisicing nisi qui ut nisi minim duis proident enim ad. Eiusmod
+                        amet voluptate laboris veniam sunt Lorem cillum ipsum.</p>
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>
